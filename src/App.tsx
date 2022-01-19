@@ -1,25 +1,33 @@
-import React from "react";
-import './App.css';
+import { table } from "console";
+import { stringify } from "querystring";
+import React, { FC, useState } from "react";
+import "./App.css";
+import Taulu from "./Komponentit/taulu";
+import taulu from "./Komponentit/taulu";
+
+
 
 const App = () => {
+
+  interface State{
+    ihmiset:{
+      etunimi: string
+      sukunimi: string
+      age: number
+    }[]
+  }
+
+  const [henkilo, setHenkilo] = useState<State["ihmiset"]>([])
+
+
+
+
   return(
-    <div className = "app-container">
-      <table>
-        <thead>
-          <tr>
-            <th> First name </th>
-            <th> Last name</th>
-            <th> Age</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td> Ville </td>
-            <td> Herajärvi </td>
-            <td> 28 </td>
-          </tr>
-        </tbody>
-      </table>
+    <div className = "App">
+      <h1> Testi </h1>
+      <Taulu />
+
+   
     </div>
   )
 }
