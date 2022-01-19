@@ -2,7 +2,9 @@ import { table } from "console";
 import { stringify } from "querystring";
 import React, { FC, useState } from "react";
 import "./App.css";
+import Lisays from "./Komponentit/Lisää_tauluun";
 import Taulu from "./Komponentit/taulu";
+
 
 
 
@@ -32,6 +34,7 @@ const App = () => {
     <div className = "App">
       <h1> Taulu lisätyistä henkilöistä </h1>
       <Taulu ihmiset={henkilo} />
+      <Lisays/>
 
    
     </div>
