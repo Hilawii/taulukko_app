@@ -1,25 +1,48 @@
 import React from "react";
 
-const Taulu = () =>{
+
+interface Props{
+    ihmiset:{
+      etunimi: string
+      sukunimi: string
+      ika: number
+    }[]
+  }
+
+const Taulu: React.FC<Props> = ({ihmiset}) => {
+
+
+    const renderTaulu = (): JSX.Element[] =>{
+        return ihmiset.map((ihmiset) => {
+            return(
+            <div className = "Taulu">
+                <table className="Taulu">
+                <thead>
+                  <tr>
+                    <th>Etunimi  </th>
+                    <th>Sukunimi </th>
+                    <th>Ikä </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{ihmiset.etunimi} </td>
+                    <td>{ihmiset.sukunimi} </td>
+                    <td>{ihmiset.ika}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            )
+
+        })
+
+    }
+
     return(
-        <div className = "App">
-        <table>
-          <thead>
-            <tr>
-              <th>Testi  </th>
-              <th>Testi2 </th>
-              <th>Testi3 </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>"Testi" </td>
-              <td>"testi" </td>
-              <td>"testi"</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+        <div>
+            {renderTaulu()}
+        </div>
     )
 
 }

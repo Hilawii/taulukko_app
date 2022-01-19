@@ -3,29 +3,35 @@ import { stringify } from "querystring";
 import React, { FC, useState } from "react";
 import "./App.css";
 import Taulu from "./Komponentit/taulu";
-import taulu from "./Komponentit/taulu";
+
 
 
 
 const App = () => {
+  
 
-  interface State{
+  interface Tila{
     ihmiset:{
       etunimi: string
       sukunimi: string
-      age: number
+      ika: number
     }[]
   }
 
-  const [henkilo, setHenkilo] = useState<State["ihmiset"]>([])
-
+  const [henkilo, setHenkilo] = useState<Tila["ihmiset"]>([
+    {
+      etunimi: "Ville",
+      sukunimi: "Herajärvi",
+      ika: 27
+    }
+])
 
 
 
   return(
     <div className = "App">
-      <h1> Testi </h1>
-      <Taulu />
+      <h1> Taulu lisätyistä henkilöistä </h1>
+      <Taulu ihmiset={henkilo} />
 
    
     </div>
