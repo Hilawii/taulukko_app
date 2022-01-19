@@ -10,6 +10,21 @@ Table {
   width: 100%;
 }
 
+.Lisäys-nappi {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #0b5468;
+  font-weight: 700;
+  color: white;
+  border: none
+}
+.Lisäätauluun {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  margin: 5rem auto
+}
+
 th,
 td {
   border: 1px solid #ffffff;

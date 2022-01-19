@@ -1,13 +1,7 @@
 import React from "react";
+import {Tila as Props} from "../App"
 
 
-interface Props{
-    ihmiset:{
-      etunimi: string
-      sukunimi: string
-      ika: number
-    }[]
-  }
 
 const Taulu: React.FC<Props> = ({ihmiset}) => {
 
