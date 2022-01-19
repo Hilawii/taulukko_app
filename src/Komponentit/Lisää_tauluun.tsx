@@ -40,13 +40,16 @@ const Lisays:  React.FC<Props2> = ({ihmiset, setIhmiset}) => {
                 sukunimi: syote.Sukunimi,
                 ika: parseInt( syote.Ikä)
 
-
             }
 
-        ])
+        ]);
 
+        setSyote({
+            Etunimi: "",
+            Sukunimi: "",
+            Ikä: ""
+        })
           
-
     }
 
 

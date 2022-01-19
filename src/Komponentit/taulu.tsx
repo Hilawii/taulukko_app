@@ -2,7 +2,6 @@ import React from "react";
 import {Tila as Props} from "../App"
 
 
-
 const Taulu: React.FC<Props> = ({ihmiset}) => {
 
 
