@@ -3,6 +3,8 @@ import "./App.css";
 import Lisays from "./Komponentit/Lisää_tauluun";
 import Taulu from "./Komponentit/taulu";
 
+
+
 export interface Tila{
   ihmiset:{
     etunimi: string
@@ -11,8 +13,6 @@ export interface Tila{
   }[]
 }
 
-
-
 const App = () => {
   
 
@@ -20,17 +20,13 @@ const App = () => {
     {
       etunimi: "Ville",
       sukunimi: "Herajärvi",
-      ika: 27
+      ika: 28
     }
 ])
 
-
-
-
-
   return(
     <div className = "App">
-      <table> 
+      <table > 
         <thead>
           <tr>
               <th>Etunimi  </th>
@@ -38,11 +34,11 @@ const App = () => {
               <th>Ikä </th>
               <th> Poisto</th>
           </tr>
-        </thead>
+        </thead>   
         <Taulu ihmiset={henkilo} />
+
       </table>
       <Lisays ihmiset={henkilo} setIhmiset={setHenkilo}/>
-
     </div>
   )
 }

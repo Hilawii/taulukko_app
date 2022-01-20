@@ -11,6 +11,15 @@ Table {
   width: 100%;
 }
 
+.Poista-nappula{
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: #0b5468;
+  font-weight: 700;
+  color: white;
+
+}
+
 
 .Taulun_rivi {
   border-collapse: collapse;
@@ -46,12 +55,12 @@ td {
 }
 
 th {
-  background-color: rgb(117, 201, 250);
+  background-color: rgb(235, 132, 14);
   
 }
 
 td {
-  background-color: rgb(205, 235, 253);
+  background-color: rgb(235, 132, 14);
 
 }
 

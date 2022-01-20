@@ -5,7 +5,6 @@ import {Tila as Props} from "../App"
 const Taulu: React.FC<Props> = ({ihmiset}) => {
 
 
-
   const renderTaulu = (): JSX.Element[] =>{
       return ihmiset.map((ihmiset) => {
           return(
@@ -13,12 +12,16 @@ const Taulu: React.FC<Props> = ({ihmiset}) => {
                   <td>{ihmiset.etunimi}</td>
                   <td>{ihmiset.sukunimi} </td>
                   <td>{ihmiset.ika}</td>
-                  <td></td>
+                  <td>
+                    <button className="Poista-nappula"
+                    >
+                      
+                      Poista
+                    </button>
+                  </td>
                 </tr>
-
                 )
        })
-
     }
     return(
         <tbody>
