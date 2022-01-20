@@ -26,13 +26,23 @@ const App = () => {
 
 
 
+
+
   return(
     <div className = "App">
-      <h1> Taulu lisätyistä henkilöistä </h1>
-      <Taulu ihmiset={henkilo} />
+      <table> 
+        <thead>
+          <tr>
+              <th>Etunimi  </th>
+              <th>Sukunimi </th>
+              <th>Ikä </th>
+              <th> Poisto</th>
+          </tr>
+        </thead>
+        <Taulu ihmiset={henkilo} />
+      </table>
       <Lisays ihmiset={henkilo} setIhmiset={setHenkilo}/>
 
-   
     </div>
   )
 }
