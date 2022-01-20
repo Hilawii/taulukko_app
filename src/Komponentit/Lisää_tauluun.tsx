@@ -41,7 +41,6 @@ const Lisays:  React.FC<Props2> = ({ihmiset, setIhmiset}) => {
                 ika: parseInt( syote.Ikä)
 
             }
-
         ]);
 
         setSyote({
@@ -52,7 +51,7 @@ const Lisays:  React.FC<Props2> = ({ihmiset, setIhmiset}) => {
           
     }
 
-
+    
     return(
         <div className="Lisäätauluun">
             <input

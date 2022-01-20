@@ -1,9 +1,7 @@
-import React, { FC, useState } from "react";
+import React, {useState } from "react";
 import "./App.css";
 import Lisays from "./Komponentit/Lisää_tauluun";
 import Taulu from "./Komponentit/taulu";
-
-
 
 export interface Tila{
   ihmiset:{

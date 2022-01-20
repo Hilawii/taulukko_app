@@ -13,9 +13,7 @@ const Taulu: React.FC<Props> = ({ihmiset}) => {
                   <td>{ihmiset.sukunimi} </td>
                   <td>{ihmiset.ika}</td>
                   <td>
-                    <button className="Poista-nappula"
-                    >
-                      
+                    <button className="Poista-nappula"> 
                       Poista
                     </button>
                   </td>
